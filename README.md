@@ -5,7 +5,7 @@
 Dlulu is an AI-first planning and execution platform that reverse-engineers high-level ambitions into executable architecture.
 
 ## 🚀 The Mission
-We bridge the gap between "delusion" (dreaming) and "execution" (doing). Whether you're preparing for MD boards, building a startup, or planning a self-driving car in 2007, Dlulu provides the roadmap and the agentic guidance to make it happen.
+We bridge the gap between "delusion" (dreaming) and "execution" (doing). Whether you're preparing for MD boards, building a startup,or trying to stay fi, Dlulu provides the roadmap and the agentic guidance to make it happen.
 
 ## 📖 Our Story
 Read the full story behind Dlulu, our "vibe coding" journey, and our vision for human success in [ABOUT.md](./ABOUT.md).
