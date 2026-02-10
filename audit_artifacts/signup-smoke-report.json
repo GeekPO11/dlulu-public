@@ -1,0 +1,8 @@
+{
+  "baseUrl": "http://localhost:3000",
+  "email": "qa.signup.1770429051@gmail.com",
+  "success": true,
+  "verificationPrompt": true,
+  "onboardingReached": false,
+  "errorBanner": null
+}

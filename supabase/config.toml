@@ -1,0 +1,78 @@
+# =============================================================================
+# SUPABASE EDGE FUNCTIONS CONFIGURATION
+# =============================================================================
+# 
+# NOTE: We set verify_jwt = false for all functions because:
+# 1. We handle JWT verification ourselves in _shared/auth.ts
+# 2. This avoids issues with Supabase's built-in JWT validation layer
+# 3. Our code still requires valid authentication via supabase.auth.getUser()
+#
+# See: https://supabase.com/docs/guides/functions/function-configuration
+
+# Analyze ambitions - onboarding step 1
+[functions.analyze-ambitions]
+verify_jwt = false
+
+# Generate prerequisites - onboarding post-intake status check
+[functions.generate-prerequisites]
+verify_jwt = false
+
+# Generate blueprint - onboarding step 2  
+[functions.generate-blueprint]
+verify_jwt = false
+
+# Generate schedule - calendar scheduling
+[functions.generate-schedule]
+verify_jwt = false
+
+# Generate goal overview - strategy + critical gaps
+[functions.generate-goal-overview]
+verify_jwt = false
+
+# Refine phase - roadmap refinement
+[functions.refine-phase]
+verify_jwt = false
+
+# Daily quote - motivational quotes
+[functions.daily-quote]
+verify_jwt = false
+
+# Chat - AI chatbot
+[functions.chat]
+verify_jwt = false
+
+# Chat classify - route chat actions
+[functions.chat-classify]
+verify_jwt = false
+
+# Refine roadmap - roadmap refinement
+[functions.refine-roadmap]
+verify_jwt = false
+
+# Analyze goal strategy
+[functions.analyze-goal-strategy]
+verify_jwt = false
+
+# Delete account
+[functions.delete-account]
+verify_jwt = false
+
+# Sync google calendar
+[functions.sync-google-calendar]
+verify_jwt = false
+
+# Stripe Webhook (CRITICAL: Must be false as Stripe does not sign with our JWT)
+[functions.stripe-webhook]
+verify_jwt = false
+
+# Stripe Checkout
+[functions.stripe-checkout]
+verify_jwt = false
+
+# Stripe Elements
+[functions.stripe-elements]
+verify_jwt = false
+
+# Stripe Portal
+[functions.stripe-portal]
+verify_jwt = false

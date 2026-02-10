@@ -1,0 +1,31 @@
+{
+  "log": [
+    "2026-02-07T02:20:29.942Z Opening landing page",
+    "2026-02-07T02:20:31.392Z Opening login modal",
+    "2026-02-07T02:20:31.868Z Waiting for authenticated dashboard state",
+    "2026-02-07T02:20:34.229Z Dashboard loaded: Ambition Dashboard\n\nGood evening, gumbers. Your AI has identified 2 high-leverage actions for today.",
+    "2026-02-07T02:20:34.229Z Navigating to goals via floating dock",
+    "2026-02-07T02:20:36.319Z Navigating to calendar via floating dock",
+    "2026-02-07T02:20:39.453Z Navigating to settings via floating dock",
+    "2026-02-07T02:20:41.604Z Upgrade button not visible in settings (may already be on paid plan)",
+    "2026-02-07T02:20:41.604Z Runtime flow complete"
+  ],
+  "consoleMessages": [
+    {
+      "type": "warning",
+      "text": "You may test your Stripe.js integration over HTTP. However, live Stripe.js integrations must use HTTPS."
+    },
+    {
+      "type": "warning",
+      "text": "[WARN] [console.warn] {env: development, appVersion: dev, consoleArgs: Array(1), timestamp: 2026-02-07T02:20:30.428Z}"
+    }
+  ],
+  "requestFailures": [
+    {
+      "url": "http://localhost:3000/DluluProductVideoWebsite.mp4",
+      "method": "GET",
+      "failure": "net::ERR_ABORTED"
+    }
+  ],
+  "badResponses": []
+}

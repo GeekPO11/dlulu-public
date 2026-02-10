@@ -1,0 +1,18 @@
+{
+  "baseUrl": "http://127.0.0.1:3000",
+  "reached": {
+    "onboarding": true,
+    "status": true,
+    "blueprint": true,
+    "feasibility": true
+  },
+  "walkthroughVisible": {
+    "profile": true,
+    "ambitions": true,
+    "status": true,
+    "blueprint": true,
+    "feasibility": true
+  },
+  "gaps": [],
+  "notes": []
+}

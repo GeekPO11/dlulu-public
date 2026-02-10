@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon: Orange rounded square with \\ logo -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23f97316'/><text x='50' y='68' font-size='28' font-weight='bold' fill='white' text-anchor='middle' font-family='system-ui'>\\\\</text></svg>" />
+
+    <title>Dlulu Life — The Manifestation Engine ✨</title>
+    <meta name="description"
+        content="AI-powered manifestation engine that turns your delulu dreams into reality. no cap, just results." />
+    <meta name="theme-color" content="#f97316" />
+    <meta name="color-scheme" content="light dark" />
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https:; media-src 'self' blob: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://js.stripe.com https://cdnjs.middleware.io https://cdn.mxpnl.com; connect-src 'self' https://*.supabase.co https://api.stripe.com https://m.stripe.network https://js.stripe.com https://*.googleapis.com https://*.hcaptcha.com https://hcaptcha.com https://*.middleware.io https://api.mixpanel.com https://api-js.mixpanel.com ws://localhost:3000 ws://127.0.0.1:3000 ws://localhost:54321 ws://127.0.0.1:54321 http://localhost:3000 http://127.0.0.1:3000 http://localhost:54321 http://127.0.0.1:54321; frame-src https://js.stripe.com https://hooks.stripe.com https://hcaptcha.com https://*.hcaptcha.com;">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Dlulu Life — The Manifestation Engine ✨" />
+    <meta property="og:description"
+        content="AI-powered manifestation engine that turns your delulu dreams into reality. no cap, just results." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dlulu.life" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dlulu Life — The Manifestation Engine ✨" />
+    <meta name="twitter:description"
+        content="AI-powered manifestation engine that turns your delulu dreams into reality. no cap, just results." />
+
+    <!-- Fonts: Plus Jakarta Sans for modern vibey look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Material Symbols for Stitch icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Theme boot (default: light) -->
+    <script>
+        (function () {
+            try {
+                var THEMES = {
+                    light: {
+                        background: '220 33% 98%',
+                        foreground: '222 47% 11%',
+                        card: '0 0% 100%',
+                        'card-foreground': '222 47% 11%',
+                        popover: '0 0% 100%',
+                        'popover-foreground': '222 47% 11%',
+                        primary: '222 47% 11%',
+                        'primary-foreground': '0 0% 100%',
+                        secondary: '220 16% 96%',
+                        'secondary-foreground': '222 47% 11%',
+                        muted: '220 16% 96%',
+                        'muted-foreground': '218 18% 36%',
+                        accent: '220 16% 94%',
+                        'accent-foreground': '222 47% 11%',
+                        destructive: '0 84.2% 60.2%',
+                        'destructive-foreground': '0 0% 98%',
+                        border: '220 13% 91%',
+                        input: '220 13% 91%',
+                        ring: '222 47% 11%',
+                        'chart-1': '24 95% 53%',
+                        'chart-2': '173 58% 39%',
+                        'chart-3': '350 89% 60%',
+                        'chart-4': '43 74% 66%',
+                        'chart-5': '27 87% 67%'
+                    },
+                    dark: {
+                        background: '25.71 17.07% 8.04%',
+                        foreground: '0 0% 95%',
+                        card: '25 18.18% 12.94%',
+                        'card-foreground': '0 0% 95%',
+                        popover: '25 18.18% 12.94%',
+                        'popover-foreground': '0 0% 95%',
+                        primary: '25 95% 52.94%',
+                        'primary-foreground': '0 0% 100%',
+                        secondary: '25.26 19.59% 19.02%',
+                        'secondary-foreground': '0 0% 95%',
+                        muted: '25.26 19.59% 19.02%',
+                        'muted-foreground': '0 0% 82%',
+                        accent: '25.26 19.59% 19.02%',
+                        'accent-foreground': '0 0% 95%',
+                        destructive: '0 62.8% 30.6%',
+                        'destructive-foreground': '0 0% 98%',
+                        border: '24.44 18.88% 28.04%',
+                        input: '24.44 18.88% 28.04%',
+                        ring: '25 95% 52.94%',
+                        'chart-1': '25 95% 60%',
+                        'chart-2': '160 60% 45%',
+                        'chart-3': '350 89% 60%',
+                        'chart-4': '43 74% 70%',
+                        'chart-5': '340 75% 55%'
+                    },
+                    sky: {
+                        background: '207 100% 97%',
+                        foreground: '218 46% 20%',
+                        card: '0 0% 100%',
+                        'card-foreground': '218 46% 20%',
+                        popover: '0 0% 100%',
+                        'popover-foreground': '218 46% 20%',
+                        primary: '209 95% 56%',
+                        'primary-foreground': '218 46% 20%',
+                        secondary: '209 70% 90%',
+                        'secondary-foreground': '218 46% 20%',
+                        muted: '209 50% 94%',
+                        'muted-foreground': '216 32% 30%',
+                        accent: '39 100% 73%',
+                        'accent-foreground': '218 46% 20%',
+                        destructive: '0 78% 58%',
+                        'destructive-foreground': '0 0% 98%',
+                        border: '210 48% 84%',
+                        input: '210 48% 84%',
+                        ring: '209 95% 56%',
+                        'chart-1': '209 95% 56%',
+                        'chart-2': '196 89% 62%',
+                        'chart-3': '39 100% 69%',
+                        'chart-4': '13 90% 66%',
+                        'chart-5': '262 82% 74%'
+                    },
+                    bubblegum: {
+                        background: '336 100% 97%',
+                        foreground: '336 36% 20%',
+                        card: '0 0% 100%',
+                        'card-foreground': '336 36% 20%',
+                        popover: '0 0% 100%',
+                        'popover-foreground': '336 36% 20%',
+                        primary: '338 79% 58%',
+                        'primary-foreground': '336 36% 20%',
+                        secondary: '199 79% 90%',
+                        'secondary-foreground': '336 36% 20%',
+                        muted: '332 58% 93%',
+                        'muted-foreground': '336 28% 32%',
+                        accent: '44 95% 69%',
+                        'accent-foreground': '336 36% 20%',
+                        destructive: '0 75% 57%',
+                        'destructive-foreground': '0 0% 98%',
+                        border: '330 45% 86%',
+                        input: '330 45% 86%',
+                        ring: '338 79% 58%',
+                        'chart-1': '338 79% 58%',
+                        'chart-2': '198 84% 60%',
+                        'chart-3': '44 95% 69%',
+                        'chart-4': '20 95% 67%',
+                        'chart-5': '274 75% 69%'
+                    },
+                    splash: {
+                        background: '51 100% 95%',
+                        foreground: '214 52% 18%',
+                        card: '0 0% 100%',
+                        'card-foreground': '214 52% 18%',
+                        popover: '0 0% 100%',
+                        'popover-foreground': '214 52% 18%',
+                        primary: '48 100% 54%',
+                        'primary-foreground': '214 52% 18%',
+                        secondary: '194 88% 90%',
+                        'secondary-foreground': '214 52% 18%',
+                        muted: '198 58% 92%',
+                        'muted-foreground': '214 34% 28%',
+                        accent: '210 89% 62%',
+                        'accent-foreground': '0 0% 100%',
+                        destructive: '0 75% 57%',
+                        'destructive-foreground': '0 0% 98%',
+                        border: '194 55% 82%',
+                        input: '194 55% 82%',
+                        ring: '210 89% 62%',
+                        'chart-1': '48 100% 54%',
+                        'chart-2': '210 89% 62%',
+                        'chart-3': '189 91% 49%',
+                        'chart-4': '12 95% 62%',
+                        'chart-5': '276 72% 65%'
+                    }
+                };
+
+                var legacyThemeMap = {
+                    bluey: 'sky',
+                    peppa: 'bubblegum',
+                    babyshark: 'splash'
+                };
+                var storedRaw = localStorage.getItem('dlulu_theme');
+                var stored = legacyThemeMap[storedRaw] || storedRaw;
+                var theme = THEMES[stored] ? stored : 'light';
+                if (storedRaw && storedRaw !== theme) {
+                    localStorage.setItem('dlulu_theme', theme);
+                }
+                var root = document.documentElement;
+                root.dataset.theme = theme;
+                root.classList.toggle('dark', theme === 'dark');
+
+                var tokens = THEMES[theme];
+                Object.keys(tokens).forEach(function (key) {
+                    root.style.setProperty('--' + key, tokens[key]);
+                });
+
+                root.style.colorScheme = theme === 'dark' ? 'dark' : 'light';
+            } catch (e) { }
+        })();
+    </script>
+
+    <!-- Middleware RUM SDK -->
+    <script src="https://cdnjs.middleware.io/browser/libs/0.0.2/middleware-rum.min.js" type="text/javascript"
+        crossorigin="anonymous">
+        </script>
+
+    <!-- Mixpanel Analytics SDK -->
+    <script type="text/javascript">
+        (function (f, b) {
+            if (!b.__SV) {
+                var e, g, i, h; window.mixpanel = b; b._i = []; b.init = function (e, f, c) {
+                    function g(a, d) { var b = d.split("."); 2 == b.length && (a = a[b[0]], d = b[1]); a[d] = function () { a.push([d].concat(Array.prototype.slice.call(arguments, 0))) } } var a = b; "undefined" !== typeof c ? a = b[c] = [] : c = "mixpanel"; a.people = a.people || []; a.toString = function (a) { var d = "mixpanel"; "mixpanel" !== c && (d += "." + c); a || (d += " (stub)"); return d }; a.people.toString = function () { return a.toString(1) + ".people (stub)" }; i = "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders start_session_recording stop_session_recording people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+                    for (h = 0; h < i.length; h++)g(a, i[h]); var j = "set set_once union unset remove delete".split(" "); a.get_group = function () { function b(c) { d[c] = function () { callEdgeFunction([e, [c].concat(Array.prototype.slice.call(arguments, 0))]) } } for (var d = {}, e = ["get_group"].concat(Array.prototype.slice.call(arguments, 0)), c = 0; c < j.length; c++)b(j[c]); return d }; b._i.push([e, f, c])
+                }; b.__SV = 1.2; e = f.createElement("script"); e.type = "text/javascript"; e.async = !0; e.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === f.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; g = f.getElementsByTagName("script")[0]; g.parentNode.insertBefore(e, g)
+            }
+        })(document, window.mixpanel || []);
+    </script>
+
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body class="bg-background text-foreground font-sans antialiased">
+    <div id="root" class="w-full min-h-screen"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>

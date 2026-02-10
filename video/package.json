@@ -1,0 +1,30 @@
+{
+  "name": "dlulu-video",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "comps": "remotion compositions src/index.ts",
+    "render": "remotion render src/index.ts DluluDemoV2 ../dlulu-demo-2m30s-1080p.mp4",
+    "sync:css": "node scripts/sync-portal-css.mjs",
+    "transcribe": "node scripts/transcribe-whisper.mjs",
+    "captions": "node scripts/captions-from-whisper.mjs",
+    "make:captions": "node scripts/make-captions.mjs"
+  },
+  "dependencies": {
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "remotion": "^4.0.0"
+  },
+  "devDependencies": {
+    "@remotion/captions": "^4.0.0",
+    "@remotion/cli": "^4.0.0",
+    "@remotion/transitions": "^4.0.0",
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "~5.8.2"
+  }
+}
+
